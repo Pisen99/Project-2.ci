@@ -22,7 +22,7 @@ selectionButtons.forEach(selectionButton => {
     selectionButton.addEventListener('click', e => {
         const selectionName = selectionButton.dataset.selection
         const selection = SELECTIONS.find(selection => selection.name === selectionName)
-        makeSelection(selectionName)
+        makeSelection(selection)
     })
 })
 
@@ -44,6 +44,7 @@ function addSelectionResult(selection, winner) {
     div.classList.add('result-selection')
     if (winner) div.classList.add('winner')
     finalColumn.after(div)
+    console.log(selection)
 }
 
 function isWinner(selection, opponentSelection) {
