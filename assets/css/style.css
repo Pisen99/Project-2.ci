@@ -6,6 +6,33 @@
     font-family: 'Poor Story', cursive;
 }
 
+/* Header and button section */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2vh;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.game-options {
+    justify-items: baseline;
+    margin: 4rem 2rem;
+}
+
+.game-options button {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.game-options button:hover {
+    transform: scale(1.4);
+    transition: 300ms;
+}
+
 /* Different selections to play during combat */
 .selections {
     display: flex;
