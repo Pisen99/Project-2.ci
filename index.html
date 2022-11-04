@@ -8,18 +8,20 @@
     <title>RPS</title>
 </head>
 <body>
+    <!--Different selections to play during combat-->
     <div class="selections">
-        <button class="selection" data-selection="rock"><img src="assets/images/rock.png" alt="rock"></button>
-        <button class="selection" data-selection="paper"><img src="assets/images/paper.png" alt="paper"></button>
-        <button class="selection" data-selection="scissor"><img src="assets/images/scissor.png" alt="scissor"></button>
+        <button class="selection" data-selection="rock"><img class="select-image" src="assets/images/rock.png" alt="rock"></button>
+        <button class="selection" data-selection="paper"><img class="select-image" src="assets/images/paper.png" alt="paper"></button>
+        <button class="selection" data-selection="scissor"><img class="select-image" src="assets/images/scissor.png" alt="scissor"></button>
     </div>
+    <!--Result scores-->
     <div class="result">
         <div>
-            You
+            <h2>You</h2>
             <span class="result-score">0</span>
         </div>
         <div data-final-column>
-            Computer
+            <h2>Computer</h2>
             <span class="result-score">0</span>
         </div>
     </div>

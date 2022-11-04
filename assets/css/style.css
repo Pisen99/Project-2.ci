@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Poor+Story&display=swap');
+
 * {
-    background-color: green;
+    background-color: rgb(192, 211, 192);
+    color: rgb(161, 161, 229);
+    font-family: 'Poor Story', cursive;
 }
 
+/* Different selections to play during combat */
 .selections {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 0 20em;
 }
 
 .selection {
@@ -12,34 +18,53 @@
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 2rem;
-    transition: 200ms;
+    font-size: 3rem;
+    transition: 300ms;
 }
 
 .selection:hover {
         transform: scale(1.4);
 }
 
+.select-image {
+    height: 3em;
+    width: 3em;
+    border: 2px solid #3e1fa3;
+    border-radius: 50%;
+}
+
+/* Result scores */
 .result {
-    margin-top: 1rem;
     display: grid;
-    justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    align-items: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.result h2 {
+    border-style: solid;
+    border-color: #3e1fa3;
+    border-width: 0 0 2px 0;
+
 }
 
 .result-score {
-    margin-left: .1rem;
-    font-size: .5rem;
-    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* For Javascript */
+.result-selection-winner {
+    opacity: 1;
+    font-size: 1.5rem;
 }
 
 .result-selection {
     opacity: .5;
 }
 
-.result-selection-winner {
-    opacity: 1;
-    font-size: 1.5rem;
+.result-selection img {
+    height: 3em;
+    width: 3em;
 }
