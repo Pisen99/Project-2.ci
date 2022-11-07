@@ -17,13 +17,18 @@
         </div>
     </header>
     <!--Different selections to play during combat-->
-    <div class="selections">
+    <section class="selections">
         <button class="selection" data-selection="rock"><img class="select-image" src="assets/images/rock.png" alt="rock"></button>
         <button class="selection" data-selection="paper"><img class="select-image" src="assets/images/paper.png" alt="paper"></button>
         <button class="selection" data-selection="scissor"><img class="select-image" src="assets/images/scissor.png" alt="scissor"></button>
-    </div>
+    </section>
+    <!-- Rounds scores -->
+    <section class="rounds">
+        <h2>Round</h2>
+        <span class="round-score">0</span>
+    </section>
     <!--Result scores -->
-    <div class="result">
+    <section class="result">
         <div>
             <h2>You</h2>
             <span class="result-score" data-your-score>0</span>
@@ -32,12 +37,7 @@
             <h2>Computer</h2>
             <span class="result-score" data-computer-score>0</span>
         </div>
-    </div>
-    <!-- Rounds scores -->
-    <div class="rounds">
-        <h2>Round</h2>
-        <span class="round-score">0</span>
-    </div>
+    </sections>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
