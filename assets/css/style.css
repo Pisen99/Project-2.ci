@@ -11,15 +11,14 @@
 /* Header and button section */
 header {
     display: flex;
-    justify-content: space-between;
-    margin-left: 48vh;
-    font-size: 2.5rem;
+    justify-content: center;
     text-transform: uppercase;
 }
 
-.game-options {
-    justify-items: baseline;
-    margin: 4rem 2rem;
+#main-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .game-options button {
@@ -167,7 +166,7 @@ header {
     }
 
     .selection {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .result-selection {
