@@ -19,7 +19,7 @@ const SELECTIONS = [
         beats: 'paper'
     }
 ]
-
+// Finds the name of the selections and makes the selection
 selectionButtons.forEach(selectionButton => {
     selectionButton.addEventListener('click', e => {
         const selectionName = selectionButton.dataset.selection
@@ -28,6 +28,7 @@ selectionButtons.forEach(selectionButton => {
     })
 })
 
+// Added score board functionality 1/0 points if you win/lose and computers selections will randomize.
 function makeSelection(selection) {
     const computerSelection = randomSelection()
     const yourWinner = isWinner(selection, computerSelection)
@@ -44,7 +45,18 @@ function incrementScore(scoreSpan) {
     scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1
 }
 
-function addSelectionResult(selection, winner) {
+// Removes all previous selection img added to the website
+addSelectionResult([selection, computerSelection])
+
+function addSelectionResult(selections) {
+    const resultSelectionImageDivs = document.querySelectorAll('.result-selection')
+    
+    for (d of resultSelectionImageDivs) {
+        d.remove()
+    }
+}
+
+for (selection of selections) {
     const imgId = selection.image
     const img = document.createElement('img')
     img.src = imgId
@@ -61,6 +73,7 @@ function isWinner(selection, opponentSelection) {
 
 }
 
+// Calls the function for the computer to make a random choice.
 function randomSelection() {
     const randomIndex = Math.floor(Math.random() * SELECTIONS.length)
     return SELECTIONS[randomIndex]
