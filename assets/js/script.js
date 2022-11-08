@@ -45,18 +45,8 @@ function incrementScore(scoreSpan) {
     scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1
 }
 
-// Removes all previous selection img added to the website
-addSelectionResult([selection, computerSelection])
-
-function addSelectionResult(selections) {
-    const resultSelectionImageDivs = document.querySelectorAll('.result-selection')
-    
-    for (d of resultSelectionImageDivs) {
-        d.remove()
-    }
-}
-
-for (selection of selections) {
+// Created img for the game screen. Collumns to show game historic.
+function addSelectionResult(selection, winner) {
     const imgId = selection.image
     const img = document.createElement('img')
     img.src = imgId
@@ -65,8 +55,7 @@ for (selection of selections) {
     div.classList.add('result-selection')
     if (winner) div.classList.add('winner')
     finalColumn.after(div)
-    console.log(selection)
-}
+};
 
 function isWinner(selection, opponentSelection) {
     return selection.beats === opponentSelection.name
@@ -78,3 +67,13 @@ function randomSelection() {
     const randomIndex = Math.floor(Math.random() * SELECTIONS.length)
     return SELECTIONS[randomIndex]
 }
+
+// Reset button
+function resetGame() {
+    yourScoreSpan.innerText = 0;
+    computerScoreSpan.innerText = 0;
+    const clears = document.querySelectorAll('.result-selection')
+    clears.forEach(clear => {
+        clear.remove();
+    })
+};
