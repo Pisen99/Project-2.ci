@@ -39,9 +39,6 @@ header {
 .selections {
     display: flex;
     justify-content: space-around;
-
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .selection {
@@ -71,9 +68,6 @@ header {
 
     font-size: 1rem;
     text-transform: uppercase;
-
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .rounds h2 {
@@ -94,9 +88,6 @@ header {
     justify-items: center;
     font-size: 1.5rem;
     text-transform: uppercase;
-
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .result h2 {
@@ -124,4 +115,70 @@ header {
 .result-selection img {
     height: 3em;
     width: 3em;
+}
+
+/* Media Queries max-width 320px */
+@media screen and (max-width:320px) {
+    header {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .game-options {
+        margin: 0;
+        display: flex;
+    }
+
+    .game-options button {
+        font-size: 1rem;
+    }
+
+    .selection {
+        font-size: 1.5rem;
+    }
+
+    .result-selection {
+        font-size: 1rem;
+    }
+
+    .rounds {
+        font-size: 1rem;
+    }
+
+    .result {
+        font-size: 1rem;
+    }
+}
+
+/* Media queries max 768px */
+@media screen and (min-width: 768px) {
+    header {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .game-options {
+        margin: 0;
+        display: flex;
+    }
+
+    .game-options button {
+        font-size: 2rem;
+    }
+
+    .selection {
+        font-size: 3.5rem;
+    }
+
+    .result-selection {
+        font-size: 2rem;
+    }
+
+    .rounds {
+        font-size: 1.5rem;
+    }
+
+    .result {
+        font-size: 1.5rem;
+    }
 }
