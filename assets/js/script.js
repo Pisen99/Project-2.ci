@@ -46,7 +46,10 @@ function incrementScore(scoreSpan) {
     scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1;
 }
 
-// Added img for the game screen. Collumns to show recent game history.
+/* Show the caracter that a particular user just played
+@param {string} selection - One of 'rock', 'paper' or 'scissor'
+@param {string} player - One of 'computer' or 'player'
+*/
 addSelectionResult(computerSelection, 'computer')
 addSelectionResult(playerSelection, 'player')
 
