@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Poor+Story&display=swap');
 
 * {
-    background-color: rgb(192, 211, 192);
-    color: rgb(161, 161, 229);
+    color: whitesmoke;
     font-family: 'Poor Story', cursive;
-    background-image: url(../images/b-space.webp);
-    background-attachment: fixed;
 }
 
 body {
-    max-width: 1000vw;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(..//images/b-space.webp);
+    background-attachment: fixed;
 }
 
 /* Header */
