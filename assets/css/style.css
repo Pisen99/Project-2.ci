@@ -292,8 +292,8 @@ footer a {
         }
 }
 
-/* Media queries max 3840px */
-@media screen and (max-width: 3840px) {
+/* Media queries min 3840px */
+@media screen and (min-width: 3840px) {
     header {
         font-size: 8rem;
         margin: 0;
