@@ -20,7 +20,7 @@ const SELECTIONS = [
     }
 ]
 
-// Finds the name of the selections and makes the selection
+// Finds the name of the selections and makes the selection on a click
 selectionButtons.forEach(selectionButton => {
     selectionButton.addEventListener('click', e => {
         const selectionName = selectionButton.dataset.selection;
@@ -63,7 +63,7 @@ function isWinner(selection, opponentSelection) {
 
 }
 
-// Calls the function for the computer to make a random choice.
+// Creates the function for the computer to make a random choice.
 function randomSelection() {
     const randomIndex = Math.floor(Math.random() * SELECTIONS.length);
     return SELECTIONS[randomIndex];
@@ -84,8 +84,8 @@ const rulesPopUp = document.getElementById('rules-container');
 
 function popupContainer() {
     rulesPopUp.style.visibility = 'visible';
-};
+}
 
 function popupContainerClose() {
     rulesPopUp.style.visibility = 'hidden';
-};
+}

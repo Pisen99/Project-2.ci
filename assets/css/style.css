@@ -8,6 +8,11 @@
     background-attachment: fixed;
 }
 
+body {
+    max-width: 1000vw;
+    margin: 0 auto;
+}
+
 /* Header */
 header {
     display: flex;
