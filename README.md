@@ -106,6 +106,8 @@ For heading and texts "Poor Story regular 400" is used. It has a playfull look t
 ## Validator test
       
 ### HTML:
+First time I tried I expected everything to work but it seemed to be a missed spelling on line 37 '<section>'. This makes sense to why I couldn't add the footer that I had planed. Before and after I changed the spelling error and made section in to divs instead, here's the result:
+<img src="" alt="validator html">
 <img src="" alt="validator html">
 
 ### CSS:

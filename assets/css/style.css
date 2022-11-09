@@ -150,6 +150,18 @@ header {
     height: 10vh;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
 /* Media Queries max-width 320px */
 @media screen and (max-width:320px) {
     header {
