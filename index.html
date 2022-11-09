@@ -15,7 +15,7 @@
     <!-- Game options, restart/rules -->
     <section id="main-options">
     <div class="game-options">
-            <button><i class="fa-solid fa-book"></i></button>
+            <button onclick="popupContainer()"><i class="fa-solid fa-book"></i></button>
     </div>
     <div class="game-options">
         <button class="reset" onclick="resetGame()"><i class="fa-solid fa-rotate-left"></i></button>
@@ -43,6 +43,32 @@
             <span class="result-score" data-computer-score>0</span>
         </div>
     </sections>
+    <div id="rules-container">
+            <h3>How to play</h3>
+            <ul class="rules-list">
+                <li>
+                    <img src="assets/images/rock.png" alt="">
+                    <span>Beats</span>
+                    <img src="assets/images/scissor.png" alt="">
+                </li>
+                <li>
+                    <img src="assets/images/paper.png" alt="">
+                    <span>Beats</span>
+                    <img src="assets/images/rock.png" alt="">
+                </li>
+                <li>
+                    <img src="assets/images/scissor.png" alt="">
+                    <span>Beats</span>
+                    <img src="assets/images/paper.png" alt="">
+                </li>
+                <li>
+                    <img src="assets/images/rock.png" alt="">
+                    <span>Draw</span>
+                    <img src="assets/images/rock.png" alt="">
+                </li>
+            </ul>
+            <button id="return" onclick="popupContainerClose()">Start Playing</button>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
