@@ -142,6 +142,18 @@ header {
     width: 50vw;
     height: 70vh;
     text-transform: uppercase;
+
+    padding: 50px;
+    background: radial-gradient(purple, #1a4368);
+    box-shadow: -1px 0px 20px 18px #6033a3;
+}
+
+.heading-button {
+    font-size: 2rem;
+
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 .rules-visible {
@@ -149,17 +161,15 @@ header {
 }
 
 .rules-list {
-    align-items: center;
     list-style: none;
-
-    padding: 50px;
-    background: radial-gradient(purple, #3c1563);
-    box-shadow: -1px 0px 20px 18px #6033a3;
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
 }
 
 .rules-list img {
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 100px;
+    max-height: 100px;
 }
 /* Footer with a link */
 footer {
@@ -167,11 +177,15 @@ footer {
     justify-content: center;
     font-size: 2rem;
     text-transform: uppercase;
+    letter-spacing: .5rem;
 }
 
 footer a {
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
+
+    box-shadow: -1px 0px 20px 5px #6033a3;
+    letter-spacing: normal;
 }
 
 /* Media Queries max-width 320px */
