@@ -1,5 +1,5 @@
 # Rock, Paper & Scissor
-### Rock, paper & scissor is a simple game for all ages. It's most common to play as kids but even grown ups play this game to settle the differences between the players. Whoever win, best of three wins the dispute between two people.
+### Rock, paper & scissor is a simple game for all ages. It's most common to play as kids but even grown ups play this game. Whoever win, best of five wins the dispute between two people.
 
 ## How to play:
 

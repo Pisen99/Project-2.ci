@@ -9,10 +9,11 @@
     <title>RPS</title>
 </head>
 <body>
+    <!-- header -->
     <header>
         <h1>RockPaperScissor+</h1>
     </header>
-    <!-- Game options, restart/rules -->
+    <!-- Game options, reset/rules -->
     <section id="main-options">
     <div class="game-options">
             <button onclick="popupContainer()"><i class="fa-solid fa-book"></i></button>
@@ -27,7 +28,7 @@
         <button class="selection" data-selection="paper"><img class="select-image" src="assets/images/paper.png" alt="paper"></button>
         <button class="selection" data-selection="scissor"><img class="select-image" src="assets/images/scissor.png" alt="scissor"></button>
     </section>
-    <!-- Rounds scores -->
+    <!-- Round scores -->
     <section class="rounds">
         <h2>Round</h2>
         <span class="round-score">0</span>
@@ -43,6 +44,7 @@
             <span class="result-score" data-computer-score>0</span>
         </div>
     </sections>
+    <!-- popup for rules in javascript -->
     <div id="rules-container">
             <h3>How to play</h3>
             <ul class="rules-list">

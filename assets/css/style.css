@@ -8,12 +8,14 @@
     background-attachment: fixed;
 }
 
-/* Header and button section */
+/* Header */
 header {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
 }
+
+/* Buttons for restart */
 
 #main-options {
     display: flex;
@@ -61,7 +63,7 @@ header {
     border-radius: 50%;
 }
 
-/* Rounds */
+/* Round scores */
 .rounds {
     display: grid;
     justify-content: center;
@@ -102,7 +104,7 @@ header {
     justify-content: space-around;
 }
 
-/* For Javascript */
+/* Displaying game selections played (for Javascript) */
 .result-selection.winner {
     opacity: 1;
     font-size: 1.5rem;
@@ -117,7 +119,7 @@ header {
     width: 3em;
 }
 
-/* Rules pop up box (javascript) */
+/* Rules pop up box (for javascript) */
 #rules-container {
     visibility: hidden;
     display: flex;
@@ -147,7 +149,6 @@ header {
     width: 8vw;
     height: 10vh;
 }
-
 
 /* Media Queries max-width 320px */
 @media screen and (max-width:320px) {
@@ -182,7 +183,7 @@ header {
     }
 }
 
-/* Media queries max 768px */
+/* Media queries min 768px */
 @media screen and (min-width: 768px) {
     header {
         font-size: 2rem;
