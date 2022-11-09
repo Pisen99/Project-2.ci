@@ -40,9 +40,8 @@ function makeSelection(selection) {
 
     if (yourWinner) incrementScore(yourScoreSpan);
     if (computerWinner) incrementScore(computerScoreSpan);
-
-    addSelectionResult(computerSelection, 'computer')
-    addSelectionResult(playerSelection, 'player')
+    addSelectionResult(computerSelection, 'computer');
+    addSelectionResult(playerSelection, 'player');
 }
 
 function incrementScore(scoreSpan) {
@@ -53,7 +52,6 @@ function incrementScore(scoreSpan) {
 @param {string} selection - One of 'rock', 'paper' or 'scissor'
 @param {string} player - One of 'computer' or 'player'
 */
-
 function addSelectionResult(selection, player) {
 
     const previousResultDivs = document.querySelectorAll(
@@ -106,3 +104,5 @@ function popupContainer() {
 function popupContainerClose() {
     rulesPopUp.style.visibility = 'hidden';
 }
+
+// Alert when game is over

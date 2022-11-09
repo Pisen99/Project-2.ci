@@ -16,10 +16,10 @@
     <!-- Game options, reset/rules -->
     <div id="main-options">
     <div class="game-options">
-            <button onclick="popupContainer()"><i class="fa-solid fa-book"></i></button>
+            <button onclick="popupContainer()" aria-label="Press here to display game rules"><i class="fa-solid fa-book"></i></button>
     </div>
     <div class="game-options">
-        <button class="reset" onclick="resetGame()"><i class="fa-solid fa-rotate-left"></i></button>
+        <button class="reset" onclick="resetGame()" aria-label="Press here to reset the game"><i class="fa-solid fa-rotate-left"></i></button>
     </div>
     </div>
     <!--Different selections to play during combat-->
@@ -28,11 +28,6 @@
         <button class="selection" data-selection="paper"><img class="select-image" src="assets/images/paper.png" alt="paper"></button>
         <button class="selection" data-selection="scissor"><img class="select-image" src="assets/images/scissor.png" alt="scissor"></button>
     </div>
-    <!-- Round scores -->
-    <section class="rounds">
-        <h2>Round</h2>
-        <span class="round-score" data-round-score>0</span>
-    </section>
     <!--Result scores -->
     <section class="result">
         <div>
@@ -49,27 +44,27 @@
             <h3 class="heading-button">How to play</h3>
             <ul class="rules-list">
                 <li>
-                    <img src="assets/images/rock.png" alt="">
+                    <img src="assets/images/rock.png" alt="rock">
                     <span>Beats</span>
-                    <img src="assets/images/scissor.png" alt="">
+                    <img src="assets/images/scissor.png" alt="scissor">
                 </li>
                 <li>
-                    <img src="assets/images/paper.png" alt="">
+                    <img src="assets/images/paper.png" alt="paper">
                     <span>Beats</span>
-                    <img src="assets/images/rock.png" alt="">
+                    <img src="assets/images/rock.png" alt="rock">
                 </li>
                 <li>
-                    <img src="assets/images/scissor.png" alt="">
+                    <img src="assets/images/scissor.png" alt="scissor">
                     <span>Beats</span>
-                    <img src="assets/images/paper.png" alt="">
+                    <img src="assets/images/paper.png" alt="paper">
                 </li>
                 <li>
-                    <img src="assets/images/rock.png" alt="">
+                    <img src="assets/images/rock.png" alt="rock">
                     <span>Draw</span>
-                    <img src="assets/images/rock.png" alt="">
+                    <img src="assets/images/rock.png" alt="rock">
                 </li>
             </ul>
-            <button class="heading-button" id="return" onclick="popupContainerClose()">Start Playing</button>
+            <button class="heading-button" id="return" onclick="popupContainerClose()" aria-label="Return to the game">Start Playing</button>
     </div>
     <footer>
         <p>Made by <a href="https://github.com/Pisen99" target="_blank">Pisen99</a></p>
