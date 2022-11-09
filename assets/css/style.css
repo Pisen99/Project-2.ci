@@ -193,6 +193,14 @@ footer a {
     .result {
         font-size: 1rem;
     }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    footer a {
+        font-size: 1.2rem;
+    }
 }
 
 /* Media queries min 768px */
