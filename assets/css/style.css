@@ -32,6 +32,7 @@ header {
 .game-options button {
     font-size: 2rem;
     border: none;
+    border-radius: 30%;
     background: none;
     outline: none;
     cursor: pointer;
@@ -40,6 +41,8 @@ header {
 .game-options button:hover {
     transform: scale(1.4);
     transition: 300ms;
+    background: radial-gradient(purple, #3c1563);
+    box-shadow: -1px 0px 20px 18px #6033a3;
 }
 
 /* Different selections to play during combat */
@@ -66,6 +69,8 @@ header {
     width: 3em;
     border: 2px solid #250d9e7f;
     border-radius: 50%;
+    background: radial-gradient(purple, #3c1563);
+    box-shadow: -1px 0px 20px 18px #6033a3;
 }
 
 /* Round scores */
@@ -147,14 +152,16 @@ header {
     align-items: center;
     list-style: none;
 
-    padding: 0;
+    padding: 50px;
+    background: radial-gradient(purple, #3c1563);
+    box-shadow: -1px 0px 20px 18px #6033a3;
 }
 
 .rules-list img {
-    width: 8vw;
-    height: 10vh;
+    max-width: 120px;
+    max-height: 120px;
 }
-
+/* Footer with a link */
 footer {
     display: flex;
     justify-content: center;
