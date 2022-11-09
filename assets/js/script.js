@@ -46,15 +46,28 @@ function incrementScore(scoreSpan) {
     scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1;
 }
 
-// Added img for the game screen. Collumns to show game history.
-function addSelectionResult(selection, winner) {
+// Added img for the game screen. Collumns to show recent game history.
+addSelectionResult(computerSelection, 'computer')
+addSelectionResult(playerSelection, 'player')
+
+function addSelectionResult(selection, player) {
+
+    const previousResultDivs = document.querySelectorAll(
+        `.result-selection.${player}`
+    )
+    
+    for (d of previousResultDivs) {
+        d.remove()
+    }
+
     const imgId = selection.image;
     const img = document.createElement('img');
     img.src = imgId;
     const div = document.createElement('div');
     div.appendChild(img);
     div.classList.add('result-selection');
-    if (winner) div.classList.add('winner');
+    div.classList.add(player);
+    
     finalColumn.after(div);
 }
 

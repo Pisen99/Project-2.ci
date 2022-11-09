@@ -42,7 +42,7 @@ header {
     transform: scale(1.4);
     transition: 300ms;
     background: radial-gradient(purple, #3c1563);
-    box-shadow: -1px 0px 20px 18px #6033a3;
+    box-shadow: -1px 0px 20px 8px #6033a3;
 }
 
 /* Different selections to play during combat */
@@ -70,7 +70,7 @@ header {
     border: 2px solid #250d9e7f;
     border-radius: 50%;
     background: radial-gradient(purple, #3c1563);
-    box-shadow: -1px 0px 20px 18px #6033a3;
+    box-shadow: -1px 0px 20px 8px #6033a3;
 }
 
 /* Round scores */
