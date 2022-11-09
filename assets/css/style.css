@@ -139,7 +139,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50vw;
+    width: 30vw;
     height: 70vh;
     text-transform: uppercase;
 
@@ -227,6 +227,21 @@ footer a {
     footer a {
         font-size: 1.2rem;
     }
+
+    #rules-container {
+    width: 50vw;
+    height: 60vh;
+    padding: 10px;
+    }
+    
+    .heading-button {
+        font-size: 1rem;
+    }
+    
+    .rules-list img {
+        max-width: 40px;
+        max-height: 40px;
+    }
 }
 
 /* Media queries min 768px */
@@ -259,5 +274,68 @@ footer a {
 
     .result {
         font-size: 1.5rem;
+    }
+
+    #rules-container {
+        width: 50vw;
+        height: 60vh;
+        padding: 10px;
+        }
+        
+        .heading-button {
+            font-size: 2rem;
+        }
+        
+        .rules-list img {
+            max-width: 80px;
+            max-height: 80px;
+        }
+}
+
+/* Media queries max 3840px */
+@media screen and (max-width: 3840px) {
+    header {
+        font-size: 8rem;
+        margin: 0;
+    }
+
+    .game-options button {
+        font-size: 6rem;
+    }
+
+    .selection {
+        font-size: 6rem;
+    }
+
+    .rounds {
+        font-size: 4rem;
+    }
+
+    .result {
+        font-size: 5rem;
+    }
+
+    footer {
+        font-size: 4rem;
+    }
+
+    #rules-container {
+        width: 40vw;
+        height: 60vh;
+        padding: 10px;
+    }
+        
+    .heading-button {
+            font-size: 5rem;
+    }
+
+    .rules-list {
+            font-size: 6rem;
+            margin: 0;
+    }
+        
+    .rules-list img {
+            max-width: 250px;
+            max-height: 250px;
     }
 }
