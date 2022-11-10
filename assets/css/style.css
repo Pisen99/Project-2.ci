@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
 
 * {
-    color: whitesmoke;
+    color: #f5f5f5;
     font-family: 'Poor Story', cursive;
 }
 
@@ -41,7 +41,7 @@ header {
 .game-options button:hover {
     transform: scale(1.4);
     transition: 300ms;
-    background: radial-gradient(purple, #3c1563);
+    background: radial-gradient(#800080, #3c1563);
     box-shadow: -1px 0px 20px 8px #6033a3;
 }
 
@@ -84,7 +84,7 @@ header {
 
 .result h2 {
     border-style: solid;
-    border-color: #250d9e7f;
+    border-color: #6033a3;
     border-width: 0 0 2px 0;
 
 }
