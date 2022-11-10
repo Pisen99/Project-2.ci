@@ -1,7 +1,7 @@
 # Rock, Paper & Scissor +   [Play the game here!](https://pisen99.github.io/Project-2.ci/)
 RockPaperScissor+ is a simple game for all the ages. It's most common to play as kids but even grown ups play this game. The game is played when you want to settle something between two people. It's easy to compare the idea behind the game to "coin-flipping" or "rolling a dice", winner gets to decide what to do after that. First to five wins the dispute between the two people.
 
-![Screenshot](images.readme/amirespons.png)
+![Screenshot](images.readme/respons.png)
 
 ## Index - Table of contents
 * [Description](#description)
@@ -119,8 +119,8 @@ No problem in this test, it gave a good result.
 
 ## Lighthouse:
 No problem in this test, it gave a good result on both desktop and devices.
-![Screenshot](images.readme/lighthouse.desktop.png)
-![Screenshot](images.readme/lighthouse.devices.png)
+![Screenshot](images.readme/desktop.png)
+![Screenshot](images.readme/devices.png)
 
 ## JavaScript:
 A smal comment on this part. "d" in my JavaScript is only used for one thing, that is "d.remove()".
