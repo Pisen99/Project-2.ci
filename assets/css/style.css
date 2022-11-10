@@ -188,8 +188,9 @@ footer a {
     letter-spacing: normal;
 }
 
-/* Media Queries max-width 380px */
-@media screen and (max-width:380px) {
+
+/* Media Queries max-width 390px */
+@media screen and (max-width:390px) {
     header {
         font-size: 1rem;
         margin: 0;
@@ -229,8 +230,8 @@ footer a {
     }
 
     #rules-container {
-    width: 50vw;
-    height: 60vh;
+    width: 80vw;
+    height: 50vh;
     padding: 10px;
     }
     
