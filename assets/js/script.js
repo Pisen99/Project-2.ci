@@ -40,8 +40,13 @@ function makeSelection(selection) {
 
     if (yourWinner) incrementScore(yourScoreSpan);
     if (computerWinner) incrementScore(computerScoreSpan);
-    addSelectionResult(computerSelection, 'computer');
-    addSelectionResult(playerSelection, 'player');
+
+    if (computerScoreSpan.innerText == '5') {
+        endGamePopup(); 
+    }  else if (yourScoreSpan.innerText == '5') {
+        endGamePopup();
+    }
+
 }
 
 function incrementScore(scoreSpan) {
@@ -52,6 +57,8 @@ function incrementScore(scoreSpan) {
 @param {string} selection - One of 'rock', 'paper' or 'scissor'
 @param {string} player - One of 'computer' or 'player'
 */
+
+
 function addSelectionResult(selection, player) {
 
     const previousResultDivs = document.querySelectorAll(
@@ -69,7 +76,6 @@ function addSelectionResult(selection, player) {
     div.appendChild(img);
     div.classList.add('result-selection');
     div.classList.add(player);
-    
     finalColumn.after(div);
 }
 
@@ -105,4 +111,13 @@ function popupContainerClose() {
     rulesPopUp.style.visibility = 'hidden';
 }
 
-// Alert when game is over
+// Ending the game after 5 rounds
+const endGame = document.getElementById('end-game')
+
+function endGamePopup() {
+    endGame.style.visibility = 'visible';
+}
+
+function endGameClose() {
+    endGame.style.visibility = 'hidden';
+}

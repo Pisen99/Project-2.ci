@@ -128,10 +128,10 @@ font type comes from https://fonts.google.com/knowledge
 Used as an inspiration for structure and javascript when making the rules popup:
 https://iama3191.github.io/rock-paper-scissors-lizard-spock/
       
-Used to create an open and close in javaScript:
+Used to create an open and close function in javaScript:
 https://stackoverflow.com/questions/21070101/show-hide-div-using-javascript
       
-Used to create basic structure and as inspiration in JavaScript:
+Used to create basic structure and inspiration in JavaScript:
 https://www.youtube.com/watch?v=1yS-JV4fWqY
       
 Used to learn flexbox:
