@@ -1,3 +1,4 @@
+// Created basic structure to the game with https://github.com/WebDevSimplified/Rock-Paper-Scissors-In-JavaScript so I could easier understand how to write my own code and how it works.
 const selectionButtons = document.querySelectorAll('[data-selection]');
 const finalColumn = document.querySelector('[data-final-column]');
 const computerScoreSpan = document.querySelector('[data-computer-score]');
@@ -18,7 +19,7 @@ const SELECTIONS = [
         image: './assets/images/scissor.png',
         beats: 'paper'
     }
-]
+];
 
 // Finds the name of the selections and makes the selection on a click
 selectionButtons.forEach(selectionButton => {
@@ -26,8 +27,8 @@ selectionButtons.forEach(selectionButton => {
         const selectionName = selectionButton.dataset.selection;
         const selection = SELECTIONS.find(selection => selection.name === selectionName);
         makeSelection(selection);
-    })
-})
+    });
+});
 
 // Added score board functionality 1 or 0 points if you win or lose. Computers selections will randomize.
 function makeSelection(selection) {
@@ -57,16 +58,14 @@ function incrementScore(scoreSpan) {
 @param {string} selection - One of 'rock', 'paper' or 'scissor'
 @param {string} player - One of 'computer' or 'player'
 */
-
-
 function addSelectionResult(selection, player) {
 
     const previousResultDivs = document.querySelectorAll(
         `.result-selection.${player}`
-    )
+    );
     
     for (d of previousResultDivs) {
-        d.remove()
+        d.remove();
     }
 
     const imgId = selection.image;
@@ -97,7 +96,7 @@ function resetGame() {
     const clears = document.querySelectorAll('.result-selection');
     clears.forEach(clear => {
         clear.remove();
-    })
+    });
 }
 
 // Rules button
@@ -112,7 +111,7 @@ function popupContainerClose() {
 }
 
 // Ending the game after 5 rounds
-const endGame = document.getElementById('end-game')
+const endGame = document.getElementById('end-game');
 
 function endGamePopup() {
     endGame.style.visibility = 'visible';
